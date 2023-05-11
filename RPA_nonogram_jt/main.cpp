@@ -74,7 +74,6 @@ int main() {
 			}
 		}
 		else playBtnImg.setTexture(playBtn);
-		
 	}
 
 	return 0;
