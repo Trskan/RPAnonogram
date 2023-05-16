@@ -9,6 +9,10 @@ protected:
 	bool mapa[8][8];
 	int remLives,k,l;
 	bool x,wasColored;
+	std::vector<int> colClues[10];
+        std::vector<int> rowClues[10];
+        std::map<int, sf::Text> colCluesMap;
+        std::map<int, sf::Text> rowCluesMap;
 	sf::Texture background;
 	sf::RectangleShape* cell[10][10];
 	sf::Cursor cursor;
