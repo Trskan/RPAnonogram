@@ -137,21 +137,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="baseGame.cpp" />
+    <ClCompile Include="gameScreen.cpp" />
+    <ClCompile Include="info.cpp" />
     <ClCompile Include="infoScreen.cpp" />
+    <ClCompile Include="intlGame.cpp" />
+    <ClCompile Include="level1.cpp" />
+    <ClCompile Include="level2.cpp" />
+    <ClCompile Include="level3.cpp" />
     <ClCompile Include="levels.cpp" />
+    <ClCompile Include="levelsScreen.cpp" />
     <ClCompile Include="main.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Programiranje\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Programiranje\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Programiranje\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Programiranje\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="status.cpp" />
     <ClCompile Include="welcome.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Programiranje\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Programiranje\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="welcomeScreen.cpp" />
+    <ClCompile Include="window.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="screens.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="grid.h" />
+    <ClInclude Include="levels.h" />
+    <ClInclude Include="lives.h" />
+    <ClInclude Include="squares.h" />
+    <ClInclude Include="status.h" />
+    <ClInclude Include="welcome.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

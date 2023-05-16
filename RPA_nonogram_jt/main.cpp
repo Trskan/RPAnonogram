@@ -1,7 +1,7 @@
-#include "screens.h"
-#include <iostream>
+#include "welcome.h"
 
 int main() {
-	welcomeScreen();
+	Welcome w;
+	w.run();
 	return 0;
 }
