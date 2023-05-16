@@ -54,7 +54,7 @@ void gameWindow::checkLives() {
 		}
 		else if (remLives == 1) {
 			this->heartIcon2.setTexture(heartEmpty);
-		}
+		} else checkLives(); //rekurzivna funkcija
 	}
 }
 
