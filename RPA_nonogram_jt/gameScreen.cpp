@@ -93,6 +93,41 @@ void gameWindow::render() {
 			}
 		}
 		else exitBtnImg.setScale(0.10f, 0.10f);
+this->textColor = sf::Color(85, 118, 145);
+float xpos = 200
+for (int i = 0; i < 10; i++){
+        std::stringstream ss;
+        for (auto &j : colClues[i])
+        {
+            ss << j;
+            ss << '\n';
+        }
+        sf::Text text;
+        text.setFont(this->font);
+        text.setString(ss.str());
+        text.setCharacterSize(30);
+        text.setFillColor(this->textColor);
+        xpos += (50 - text.getLocalBounds().width) / 2.f;
+        text.setPosition(xpos, 195 - colClues[i].size() * 35);
+        xpos += (50 - text.getLocalBounds().width) / 2.f + text.getLocalBounds().width;
+        colCluesMap[i] = text;
+    }
+for (int i = 0; i < 10; i++) {
+        std::stringstream ss;
+        for (auto &j : rowClues[i])
+        {
+            ss << j;
+            ss << ' ';
+        }
+        sf::Text text;
+        text.setFont(this->font);
+        text.setString(ss.str());
+        text.setCharacterSize(30);
+        text.setFillColor(this->textColor);
+        text.setPosition(195 - text.getLocalBounds().width, 207 + i * 50);
+        rowCluesMap[i] = text;
+    }
+}
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
 			for (int i = 0; i < 10; i++) {
 				for (int j = 0; j < 10; j++) {
