@@ -8,7 +8,7 @@
 
 gameWindow::gameWindow() {
 	this->window = NULL; int n; char ch;
-	x = false; k = NULL; l = NULL;
+	x = false; k = -1; l = -1;
 	exitBtn.loadFromFile("assets/btn/X.png");
 	exitBtnImg.setScale(0.10f, 0.10f);
 	exitBtnImg.setPosition(30.0f, 30.0f);
@@ -78,9 +78,6 @@ void gameWindow::render() {
 			for (int j = 0; j < 10; j++) {
 				if ((k == i && l == j)) {
 					cell[i][j].setFillColor(sf::Color::Black);
-				}
-				if (cell[i][j].getFillColor() == sf::Color::White) {
-					cell[i][j].setFillColor(sf::Color::White);
 				}
 				cell[i][j].setOutlineThickness(2);
 				cell[i][j].setSize(sf::Vector2f(n - 1, m - 1));
