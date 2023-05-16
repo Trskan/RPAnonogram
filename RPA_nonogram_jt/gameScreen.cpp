@@ -58,10 +58,6 @@ void gameWindow::checkLives() {
 	}
 }
 
-void gameWindow::makeTable() {
-
-}
-
 void gameWindow::render() {
 	while (this->window->isOpen()) {
 		this->window->clear();
